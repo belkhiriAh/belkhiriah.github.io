@@ -1,0 +1,87 @@
+
+@media screen {
+    .print-only {
+        display: none;
+    }
+}
+
+@media print {
+    .print-only {
+        display: block;
+    }
+    .no-print {
+        display: none !important;
+    }
+    .no-print-margin {
+        margin-top: 0 !important;
+    }
+    .full-screen {
+        padding: 0 !important; /* Adjust this value as needed */
+    }
+
+    
+    
+   
+  
+
+    /* Hide unnecessary elements or classes */
+    .resume .d-lg-flex,
+
+    .resume .mobile-mt-2 {
+        display: flex !important;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .resume .container {
+        width: 100%; /* Full width for container */
+        padding: 0; /* Remove padding */
+    }
+    
+    /* Make sure the columns are displayed in a row */
+    .resume .row {
+        display: flex !important;
+        flex-wrap: nowrap; /* Prevent wrapping */
+        margin: 0; /* Remove margins */
+    }
+
+    .resume .col-lg-6 {
+        flex: 1; /* Allow columns to take equal space */
+        padding: 0; /* Remove padding */
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+    }
+
+  
+
+
+
+
+    
+
+
+
+
+    
+}
+.card-img-top {
+  width: 100%;
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
+}
+
+.progress-bar{
+  background-color: var(--first-color) ;
+
+}
+
+.badge-warning {
+    color: #fff;
+    background-color: #d3a518;
+}
+
+.badge-success {
+    color: #fff;
+    background-color: #007572;
+}
